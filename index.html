@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+    <style>
+      p {
+        color: #333;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+      span {
+        display: inline-block;
+      }
+
+      .text-container {
+        width: 440px;
+        height: 450px;
+        margin: auto;
+      }
+
+      .container {
+        align-items: center;
+        background-color: #ccc;
+        display: flex;
+        font-size: clamp(30px, 5vw, 50px);
+        height: 100vh;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">スクロールして下さい↓</div>
+    <div class="text-container">
+      <p class="js-text">こだわりのある木材と、</p>
+      <p class="js-text">スタイルのある生活に馴染む</p>
+      <p class="js-text">シンプルで美しいデザイン。</p>
+      <p class="js-text">遊ぶ、くつろぐ、爪を研ぐ</p>
+      <p class="js-text">猫が猫らしく、気の向くまま、 自由に過ごせる</p>
+      <p class="js-text">とっておきの場所。</p>
+      <p class="js-text">猫にとってどんな時も心地よく</p>
+      <p class="js-text">家族の気分までも高めるプロダクトを目指して、</p>
+      <p class="js-text">本能的に満たされる仕組みとともに、</p>
+      <p class="js-text">見た目の美しさと耐久性にこだわった</p>
+      <p class="js-text">キャットタワーを制作しました。</p>
+    </div>
+    <div class="container">終わり</div>
+  </body>
+</html>
