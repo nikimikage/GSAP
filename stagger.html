@@ -14,6 +14,10 @@
     />
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css" />
     <style>
+      .futter {
+        height: 500px;
+      }
+
       p {
         color: #333;
         font-size: 20px;
@@ -35,7 +39,7 @@
       .text-container {
         width: 460px;
         height: 468px;
-        margin: auto;
+        margin: 0 auto;
       }
 
       .container {
@@ -62,6 +66,22 @@
       .js-text_7 {
         margin-top: 30px;
       }
+
+      .circle_box {
+        width: 300px;
+        height: 300px;
+        margin: 100px auto;
+        font-size: 12px;
+      }
+      div svg {
+        overflow: visible;
+      }
+      div path {
+        fill: none;
+      }
+      div text {
+        fill: #0089a7;
+      }
     </style>
   </head>
   <body>
@@ -83,5 +103,18 @@
       <p class="js-text_10 text">キャットタワーを制作しました。</p>
     </div>
     <div class="container">終わり</div>
+
+    <div class="circle_box">
+      <svg viewBox="0 0 100 100">
+        <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+        <text>
+          <textPath xlink:href="#circle">
+            文字を円周上に配置する文字を円周上に配置する文字を円周
+          </textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div class="futter"></div>
   </body>
 </html>

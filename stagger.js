@@ -89,10 +89,23 @@ const tl = gsap.timeline({
             scaleX: 1,
             transformOrigin: "left top",
             ease: "pawer4",
-            stagger: 0.02,
+            stagger: 0.05,
         }
     );
 
+    gsap.to(
+      ".circle_box",{
+        duration: 5,
+        rotate: 360,
+        scrollTrigger: {
+          toggleActions: "play none none reverse",
+          trigger: ".circle_box", // アニメーションが始まるトリガーとなる要素
+          start: "top center", // アニメーションが始まる位置
+          scrub: 2.4,
+          markers: true, // マーカー表示
+        },
+      }
+    )
   
 
 
